@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lamborghini</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body background="http://wallpul.info/i/2016/12/wallpapers-black-4k-wallpaper-1080p.jpg">
+	<header>
+		<nav>
+            <a href="placeholder">Home</a>
+            <a href="placeholder">Huracan</a>
+            <a href="placeholder">Centenario</a>
+            <a href="placeholder">Urus</a>
+            <a href="placeholder">About</a>
+            <a href="placeholder">Careers</a>
+		</nav>
+	</header>
+    <div class="wrapperMain">
+        <article class="articleMain">
+            <h1>
+                Lamborghini Aventador
+            </h1>
+            <br/><br/><br/>
+            <figure>
+                <img src="https://s.aolcdn.com/dims-global/dims3/GLOB/legacy_thumbnail/788x525/quality/85/https://s.aolcdn.com/commerce/autodata/images/USC20LGC041A01300.jpg">
+            </figure>
+            
+            <div class="pOne">
+                <p ondblclick="toggleTextAreaOne(this)">
+                The Lamborghini Aventador is a mid-engined sports car produced by the Italian manufacturer Lamborghini.
+                Launched on 28 February 2011 at the Geneva Motor Show, five months after its initial unveiling in Sant'Agata Bolognese, the vehicle, internally codenamed LB834, was designed to replace the then-decade-old Murcielago as the new flagship model. Soon after the Aventador unveiling, Lamborghini announced that it had already sold over 12 of the production vehicles, with deliveries starting in the second half of 2011. By March 2016, Lamborghini had already built 5,000 Aventadors, taking five years to achieve this milestone. In keeping with Lamborghini tradition, the Aventador is named after a fighting bull. Aventador was a bull that fought particularly valiantly in the bull ring of Zaragoza, Spain in 1993. The bull which the Aventador is named after earned the Trofeo de la Pena La Madronera for its courage in the arena.</p>
+
+                <div id="textFormOne">
+                    <textarea id="textFieldOne" placeholder="Write to submit your text here."></textarea>
+                    <input type="submit">
+                </div>
+            </div>
+            <div class="pTwo">
+                <p ondblclick="toggleTextAreaTwo(this)">Production of the Aventador was planned to be limited to 4,000 vehicles (4,099 Murcielagos were built); however, in 2016, it achieved the 5,000 unit milestone. The molds used to make the carbon-fibre monocoque are expected to last 500 molds each and only 8 have been made. The base price of the Aventador is US$393,695.
+
+                The car's shape borrows heavily from Lamborghini's limited-edition Reventon and their Estoque concept car.
+                The vehicle was unveiled at Lummus Park, Miami, followed by Miami International Airport, followed by Auto China 2014 (with Nazionale configuration via Lamborghini Ad Personam personalization program). The Lamborghini Aventador starred in Transformers: Age of Extinction as Lockdown, the film's main antagonist.
+                </p>
+                <br/>
+
+                <div id="textFormTwo">
+                    <textarea id="textFieldTwo" placeholder="Write to submit your text here."></textarea>
+                    <input type="submit">
+                </div>
+            </div>
+            
+            <br/>
+            <div id="wrapperTileHeader">
+                <h2>
+                    Tile Title Text
+                </h2>
+                <button onclick="resetTile()" id="buttonResetTile">Reset</button>
+                <button onclick="clearTile()" id="buttonClearTile">Clear</button>
+            </div>
+            <div id="wrapperTile">
+                <div class="contentTile"><span onclick="hideTile(this)" class="closebtn">&#x274C;</span></div>
+                <div class="contentTile"><span onclick="hideTile(this)" class="closebtn">&#x274C;</span></div>
+                <div class="contentTile"><span onclick="hideTile(this)" class="closebtn">&#x274C;</span></div>
+                <div class="contentTile"><span onclick="hideTile(this)" class="closebtn">&#x274C;</span></div>
+                <div class="contentTile"><span onclick="hideTile(this)" class="closebtn">&#x274C;</span></div>
+                <div class="contentTile"><span onclick="hideTile(this)" class="closebtn">&#x274C;</span></div>
+                <div class="contentTile"><span onclick="hideTile(this)" class="closebtn">&#x274C;</span></div>
+                <div class="contentTile"><span onclick="hideTile(this)" class="closebtn">&#x274C;</span></div>
+                <div class="contentTile"><span onclick="hideTile(this)" class="closebtn">&#x274C;</span></div>
+                <div class="contentTile"><span onclick="hideTile(this)" class="closebtn">&#x274C;</span></div>
+                <div class="contentTile"><span onclick="hideTile(this)" class="closebtn">&#x274C;</span></div>
+                <div class="contentTile"><span onclick="hideTile(this)" class="closebtn">&#x274C;</span></div>
+            </div>
+        </article>    
+    </div>
+	<footer>
+		Assignment 2 created by Kenney Hersch and Tyler Takagi.
+	</footer>
+    
+<script>
+    
+    
+    /**************
+    Jank Text Area Script
+    **************/
+    function toggleTextAreaOne(currentElement) {
+        var textBox = document.getElementById("textFieldOne")
+        
+        //get the text from the called <p> and put it into the textarea
+        textBox.innerHTML = currentElement.innerHTML;
+        
+        var textForm = document.getElementById("textFormOne");
+        textForm.style.display = "inline-block";
+        currentElement.style.display = "none";
+    }
+    
+    function toggleTextAreaTwo(currentElement) {
+        var textBox = document.getElementById("textFieldTwo")
+        
+        //get the text from the called <p> and put it into the textarea
+        textBox.innerHTML = currentElement.innerHTML;
+        
+        var textForm = document.getElementById("textFormTwo");
+        textForm.style.display = "inline-block";
+        currentElement.style.display = "none";
+    }
+
+    
+    /**************
+    Tile Script
+    **************/
+    
+    function hideTile(currentElement) {
+        currentElement.parentElement.style.display = "none";
+    }
+
+    function resetTile() {
+        var tile = document.getElementsByClassName("contentTile");
+        
+        for (let index = 0; index < tile.length; index++) {
+            tile[index].style.display = "inline-block";
+        }
+    }
+
+    function clearTile() {
+        var tile = document.getElementsByClassName("contentTile");
+        for(let index = 0; index < tile.length; index++) {
+            tile[index].style.display = "none";
+        }       
+    }
+</script>
+</body>
+</html>
