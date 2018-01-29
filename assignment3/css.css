@@ -159,3 +159,9 @@ textarea {
 #textFormTwo {
     display: none;
 }
+
+
+
+.textForm {
+    text-align: center;
+}
