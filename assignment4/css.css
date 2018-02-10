@@ -1,0 +1,225 @@
+/****************
+Header
+****************/
+
+header {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    background-image: url("https://www.phyramid.com/images/blog/making-phyramid-coms-procedurally-rendered-3d-header/header-background-indexed.png")
+}
+
+nav {
+  width: 700px;
+  height: auto;
+  margin: auto;
+}
+nav ul, .sub1 {
+  list-style-type: none;
+  padding: 10px;
+  text-align: center;
+}
+nav li {
+  width: 150px;
+  margin-top: 20px;
+  display: inline-block;
+  position: relative;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: Helvetica;
+    font-weight: bolder;
+    font-size: 1.3em;
+    display: block;
+}
+nav a:hover {
+  color: #c40000;
+}
+.sub1 {
+  display: none;
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  background: rgba(128,128,128,.7);
+  border: 1px solid #ffffff;
+  border-top: 0px;
+  z-index: 999;
+}
+nav li:hover .sub1 {
+  display: block;
+}
+@media screen and (max-width: 700px) {
+  nav {
+    width: auto;
+  }
+  nav li {
+    width: auto;
+    display: block;
+    margin: auto auto 5px auto;
+  }
+  .sub1, nav li:hover .sub1 {
+    display: none;
+  }
+}
+
+/****************
+Main Article
+****************/
+
+.wrapperMain {
+    position: relative;
+    top: -4em;
+    margin: 0 auto;
+    border: 1px solid; width: 75%;
+    border-top: 0px;
+    background-color: rgba(220, 220, 220, 0.2);
+    color: white;
+    box-shadow: 2px 4px #888888;
+
+}
+
+.slideshow {
+  float: left;
+  position: relative;
+  width: 400px;
+  height: 234px;
+  padding-left: 10;
+  border-radius: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  border: 1px solid #ffffff;
+  box-shadow: 5px 5px 10px #000;
+}
+
+.slideshow img {
+  border-radius: 20px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 400px;
+  height: 234px;
+}
+
+.articleMain figure img {
+    float: left;
+    border-radius: 5em;
+    border: 2px solid; color: black;
+    height: auto;
+    width: 500px;
+    margin-right: 10px;
+    box-shadow: 3px 2px #888888;
+}
+
+h1 {
+    color: white;
+    font-family: "Arial", arial, sans-serif;
+    letter-spacing: 3px;
+    padding-left: 10px;
+    padding-top: 2px;
+}
+
+#wrapperMainText p {
+    display: block;
+    padding-left: 20px;
+    padding-right: 10px;
+    color: white;
+    font-size: 25px;
+}
+
+p:nth-last-of-type(n) {
+    text-indent: 2em;
+}
+
+h1 {
+    font-size: 30px
+}
+
+footer {
+   position: relative;
+   text-align: center;
+   color: white;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background-image: url("https://www.phyramid.com/images/blog/making-phyramid-coms-procedurally-rendered-3d-header/header-background-indexed.png");
+}
+
+/****************
+Tile section
+****************/
+
+#wrapperTile {
+    text-align: center;
+}
+
+#wrapperTileHeader {
+  margin-left: 10px;
+}
+
+#wrapperTile .contentTile{
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+    padding: 0;
+    width: 250px;
+    height: 250px;
+    border: 2px solid white;
+    background: linear-gradient(to bottom right, red, black);
+}
+
+span {
+    position: absolute;
+    right: 10px;
+    margin: none;
+    padding: 5px;;
+    cursor: pointer;
+}
+
+.contentTile button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    margin: none;
+
+}
+
+/*****************
+Textarea
+****************/
+
+textarea {
+    display: inline-block;
+    height: 150px;
+    width: 300px;
+}
+
+.tile-img {
+  width: 150px;
+  padding-top: 20px;
+}
+
+.textForm {
+    position: relative;
+    text-align: left;
+    margin-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    display: none;
+
+}
+
+.textAreaBtn {
+  display: block;
+}
+
+/***********************
+Footer
+***********************/
+
+footer p {
+  padding-top: 20px;
+  font-size: 1em;
+}
